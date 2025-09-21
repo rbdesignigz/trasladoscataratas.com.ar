@@ -1,0 +1,15 @@
+---
+import { MessageCircleMore } from "@lucide/astro";
+
+const phoneNumber = "+549375751-5441";
+---
+
+<a
+  href={`https://wa.me/${phoneNumber.replace(/\D/g, "")}`}
+  target="_blank"
+  rel="noopener"
+  class="fixed bottom-6 right-6 flex items-center gap-2 rounded-full bg-green-500 px-4 py-3 shadow-lg hover:bg-green-600 transition text-white font-semibold"
+>
+  <MessageCircleMore class="h-6 w-6 text-white" />
+  WhatsApp
+</a>

@@ -1,0 +1,16 @@
+---
+const { extras } = Astro.props;
+---
+
+<section class="bg-gradient-to-b from-white to-brand-50/60 py-10">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <h4 class="text-xl md:text-2xl font-bold">Sumá a tu itinerario</h4>
+    <div class="mt-4 overflow-x-auto no-scrollbar">
+      <div class="flex gap-4 min-w-max">
+        {extras.map(t => (
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-sm text-slate-700 bg-white">{t}</span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
